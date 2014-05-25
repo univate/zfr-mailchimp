@@ -2269,6 +2269,90 @@ return array(
             )
         ),
 
+        'GetCampaignNotOpenedReport' => array(
+            'httpMethod'       => 'POST',
+            'uri'              => 'reports/not-opened.json',
+            'summary'          => 'Retrieve the not opened data for this campaign',
+            'documentationUrl' => 'http://apidocs.mailchimp.com/api/2.0/reports/not-opened.php',
+            'parameters'       => array(
+                'api_key'  => array(
+                    'description' => 'MailChimp API key',
+                    'location'    => 'json',
+                    'type'        => 'string',
+                    'sentAs'      => 'apikey',
+                    'required'    => true
+                ),
+                'cid' => array(
+                    'description' => 'Campaign id to pull not opened report for',
+                    'location'    => 'json',
+                    'type'        => 'string',
+                    'required'    => true
+                ),
+                'opts' => array(
+                    'description' => 'Optional options to control returned data',
+                    'location'    => 'json',
+                    'type'        => 'array',
+                    'required'    => false
+                )
+            )
+        ),
+
+        'GetCampaignOpenedReport' => array(
+            'httpMethod'       => 'POST',
+            'uri'              => 'reports/opened.json',
+            'summary'          => 'Retrieve the opened data for this campaign',
+            'documentationUrl' => 'http://apidocs.mailchimp.com/api/2.0/reports/opened.php',
+            'parameters'       => array(
+                'api_key'  => array(
+                    'description' => 'MailChimp API key',
+                    'location'    => 'json',
+                    'type'        => 'string',
+                    'sentAs'      => 'apikey',
+                    'required'    => true
+                ),
+                'cid' => array(
+                    'description' => 'Campaign id to pull opened report for',
+                    'location'    => 'json',
+                    'type'        => 'string',
+                    'required'    => true
+                ),
+                'opts' => array(
+                    'description' => 'Optional options to control returned data',
+                    'location'    => 'json',
+                    'type'        => 'array',
+                    'required'    => false
+                )
+            )
+        ),
+
+        'GetCampaignSentToReport' => array(
+            'httpMethod'       => 'POST',
+            'uri'              => 'reports/sent-to.json',
+            'summary'          => 'Retrieve the sent to data for this campaign',
+            'documentationUrl' => 'http://apidocs.mailchimp.com/api/2.0/reports/sent-to.php',
+            'parameters'       => array(
+                'api_key'  => array(
+                    'description' => 'MailChimp API key',
+                    'location'    => 'json',
+                    'type'        => 'string',
+                    'sentAs'      => 'apikey',
+                    'required'    => true
+                ),
+                'cid' => array(
+                    'description' => 'Campaign id to pull sent to report for',
+                    'location'    => 'json',
+                    'type'        => 'string',
+                    'required'    => true
+                ),
+                'opts' => array(
+                    'description' => 'Optional options to control returned data',
+                    'location'    => 'json',
+                    'type'        => 'array',
+                    'required'    => false
+                )
+            )
+        ),
+
         /**
          * --------------------------------------------------------------------------------
          * USERS RELATED OPERATIONS
