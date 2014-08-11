@@ -50,6 +50,7 @@ use ZfrMailChimp\Client\Listener\ErrorHandlerListener;
  * @method array addListMergeVar(array $args = array()) {@command MailChimp AddListMergeVar}
  * @method array addListSegment(array $args = array()) {@command MailChimp AddListSegment}
  * @method array addListWebhook(array $args = array()) {@command MailChimp AddListWebhook}
+ * @method array addStaticListSegment(array $args = array()) {@command MailChimp AddStaticListSegment}
  * @method array addStaticSegmentMembers(array $args = array()) {@command MailChimp AddStaticSegmentMembers}
  * @method array batchSubscribe(array $args = array()) {@command MailChimp BatchSubscribe}
  * @method array batchUnsubscribe(array $args = array()) {@command MailChimp BatchUnsubscribe}
@@ -58,6 +59,7 @@ use ZfrMailChimp\Client\Listener\ErrorHandlerListener;
  * @method array deleteListMergeVar(array $args = array()) {@command MailChimp DeleteListMergeVar}
  * @method array deleteListSegment(array $args = array()) {@command MailChimp DeleteListSegment}
  * @method array deleteListWebhook(array $args = array()) {@command MailChimp DeleteListWebhook}
+ * @method array deleteStaticSegmentMembers(array $args = array()) {@command MailChimp DeleteStaticSegmentMembers}
  * @method array getAbuseReports(array $args = array()) {@command MailChimp GetAbuseReports}
  * @method array getInterestGroupings(array $args = array()) {@command MailChimp GetInterestGroupings}
  * @method array getListActivity(array $args = array()) {@command MailChimp GetListActivity}
